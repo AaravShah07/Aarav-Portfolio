@@ -1,0 +1,15 @@
+# Local planning material: never publish
+CLAUDE.md
+.claude/
+docs/
+
+# Original images and CAD exports, before optimization and metadata removal
+source-media/
+
+# Python and system files
+__pycache__/
+*.pyc
+.venv/
+Thumbs.db
+Desktop.ini
+.DS_Store

@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mark 12 Anti-Roll Bar | Aarav Shah</title>
+  <meta name="description" content="Front and rear anti-roll bars for the Bruin Formula Racing Mark 12: lever-arm sizing, motion ratio and drop-link geometry, packaging trade-offs, and current status.">
+  <meta name="author" content="Aarav Shah">
+  <meta name="theme-color" content="#f5f4ef">
+  <!-- CANONICAL: once the live URL is known, add a canonical link and og:url here (see DEPLOYMENT.md). -->
+  <meta property="og:title" content="Mark 12 Anti-Roll Bar | Aarav Shah">
+  <meta property="og:description" content="Sizing, motion ratio and drop-link geometry, packaging trade-offs, and current status for a Formula SAE anti-roll bar.">
+  <meta property="og:type" content="article">
+  <link rel="icon" href="../assets/images/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="../assets/fonts/archivo-700.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="../assets/css/site.css">
+  <script>document.documentElement.classList.add("js");</script>
+  <script src="../assets/js/site.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="site-name" href="../index.html">Aarav Shah</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <nav class="site-nav" id="site-nav" aria-label="Main">
+        <ul class="nav-list">
+          <li><a href="mark-12-arb.html" aria-current="page">Mark 12 ARB</a></li>
+          <li><a href="../index.html#projects">Projects</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../index.html#contact">Contact</a></li>
+          <li><a class="nav-resume" href="../assets/documents/aarav-shah-resume.pdf" download>Resume (PDF)</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" tabindex="-1">
+
+    <div class="feature case-hero">
+      <div class="wrap">
+        <div class="feature-top">
+          <div>
+            <p class="eyebrow">Featured project · Bruin Formula Racing</p>
+            <h1>Mark 12 <span class="nowrap">Anti-Roll</span> Bar</h1>
+            <p class="case-lede">I own the front and rear anti-roll bars on the team-built Mark 12, from concept through manufacturing and validation.</p>
+          </div>
+          <figure class="figure">
+            <img src="../assets/images/mark-12/rear-arb.webp" width="1598" height="832"
+                 alt="CAD render of the Mark 12 rear anti-roll bar: a long tube held in two clamp-style bearing blocks, with a curved lever arm, adjustable drop link, and quick-release pin at each end.">
+            <figcaption><strong>Fig. 1</strong> Rear ARB with curved lever arms, CAD</figcaption>
+          </figure>
+        </div>
+        <dl class="title-block">
+          <div><dt>Role</dt><dd>Anti-Roll Bar Responsible Engineer, June 2026–Present</dd></div>
+          <div><dt>Scope</dt><dd>Front and rear ARBs</dd></div>
+          <div><dt>Tools</dt><dd>SolidWorks, Motion Studies, Ansys</dd></div>
+          <div><dt>Status</dt><dd>Design and analysis complete, manufacturing next</dd></div>
+        </dl>
+      </div>
+    </div>
+
+    <div class="wrap">
+
+      <section class="case-section results-section" aria-labelledby="results-title">
+        <div class="case-text">
+          <p class="eyebrow">Results</p>
+          <h2 id="results-title">Two goals for Mark 12</h2>
+          <dl class="result-list result-pair">
+            <div>
+              <dt>Motion ratio within 5% of target</dt>
+              <dd>Met across full travel, from droop to compression, at the least-stiff, default, and most-stiff settings (Fig. 2). I got there by optimizing the drop-link pickup point on the bell crank and changing the drop-link lengths (Figs. 3 and 4), checked with SolidWorks Motion Studies.</dd>
+            </div>
+            <div>
+              <dt>Bars in double shear</dt>
+              <dd>Met at the front (Fig. 4). Packaging restrictions kept the rear in single shear.</dd>
+            </div>
+          </dl>
+        </div>
+        <div class="case-figures results-figures">
+          <figure class="figure">
+            <img src="../assets/images/mark-12/rear-motion-ratio.webp" width="1600" height="954" loading="lazy"
+                 alt="Line plot of rear ARB motion ratio over a motion study run from full droop to full compression, for the default, least-stiff (Min), and most-stiff (Max) settings. All three stay close to the 0.210 target, between about 0.199 and 0.213.">
+            <figcaption><strong>Fig. 2</strong> Rear motion ratio over full travel. Min: least stiff. Max: most stiff. Solid line: target. Dotted: &plusmn;5%.</figcaption>
+          </figure>
+          <figure class="figure">
+            <img src="../assets/images/mark-12/rear-bell-crank-pickup.webp" width="644" height="744" loading="lazy"
+                 alt="CAD close-up of the Mark 12 rear suspension: the anti-roll bar lever arm in its bearing block at the top, with an adjustable drop link running down to its pickup point on the bell crank, beside the coilover and pushrod.">
+            <figcaption><strong>Fig. 3</strong> Rear drop-link pickup on the bell crank, CAD</figcaption>
+          </figure>
+          <figure class="figure">
+            <img src="../assets/images/mark-12/front-double-shear.webp" width="742" height="1126" loading="lazy"
+                 alt="CAD close-up of the Mark 12 front suspension: a drop link runs from its pickup point on the bell crank down to the straight anti-roll bar lever arm, which is mounted in double shear on the frame.">
+            <figcaption><strong>Fig. 4</strong> Front drop-link pickup and double-shear mounting, CAD</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="case-section has-figure" aria-labelledby="changes-title">
+        <div class="case-text prose">
+          <p class="eyebrow">What changed</p>
+          <h2 id="changes-title">Changes from Mark 11</h2>
+          <ul>
+            <li><strong>Front: double shear on the front roll hoop.</strong> The new location also indirectly helps the electrical box packaging.</li>
+            <li><strong>Rear: curved lever arms.</strong> Settings are easier to change, because switching does not mean moving the arm or swapping the drop link. A weighted trade study before detailed design favored the curved shape, 304 to 280 (Fig. 6). Packaging kept the front arm straight.</li>
+            <li><strong>Rear: smaller cantilever.</strong> With double shear ruled out at the rear, I reduced the cantilever instead.</li>
+          </ul>
+        </div>
+        <div class="case-figures">
+          <figure class="figure">
+            <img src="../assets/images/mark-12/front-arb-mounting.webp" width="1030" height="866" loading="lazy"
+                 alt="CAD of the front of the Mark 12 frame with the front anti-roll bar running across the front roll hoop, a lever arm and drop link at each end.">
+            <figcaption><strong>Fig. 5</strong> Front ARB on the front roll hoop, frame CAD</figcaption>
+          </figure>
+          <figure class="figure">
+            <img src="../assets/images/mark-12/lever-arm-trade-study.webp" width="1098" height="890" loading="lazy"
+                 alt="Weighted decision matrix comparing curved and straight lever arms on motion ratio consistency (weight 10), adjustability (8), mass (8), and packaging (9), with notes for each score. Curved totals 304 and straight totals 280.">
+            <figcaption><strong>Fig. 6</strong> Lever-arm shape trade study. Score (1&ndash;10) &times; weight, summed.</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="case-section has-figure figures-narrow" aria-labelledby="process-title">
+        <div class="case-text prose">
+          <p class="eyebrow">Design process</p>
+          <h2 id="process-title">From requirements to hardware</h2>
+          <ol class="process-list">
+            <li>
+              <div>
+                <h3>Requirements and trade studies</h3>
+                <p>Mapped the motion ratio requirements and ran trade studies on lever-arm shape and bar type (U-bar, Z-bar, or bladed U-bar), choosing a U-bar for both front and rear. Sized the lever arms to the vehicle dynamics roll-stiffness targets, from the least-stiff to the most-stiff setting: 1,057&ndash;7,230 ft-lb/rad front and 8,724&ndash;14,897 ft-lb/rad rear (Fig. 7).</p>
+              </div>
+              <strong>Complete</strong>
+            </li>
+            <li>
+              <div>
+                <h3>CAD</h3>
+                <p>Built a detailed SolidWorks model of the lever arms, torsion bars, bearing blocks, drop links, and bearing block tabs.</p>
+              </div>
+              <strong>Complete</strong>
+            </li>
+            <li>
+              <div>
+                <h3>Analysis</h3>
+                <p>Used Motion Studies to bring the motion ratio within 5% of target, and ran FEA in Ansys on the 6061 aluminum bearing blocks at 905 lbf rear and 318 lbf front, removing material to cut weight while keeping a positive margin of safety (Fig. 8).</p>
+              </div>
+              <strong>Complete</strong>
+            </li>
+            <li>
+              <div>
+                <h3>Review</h3>
+                <p>Packaging interference checks, design reviews, and drawings for the machined and welded parts.</p>
+              </div>
+              <strong>In progress</strong>
+            </li>
+            <li>
+              <div>
+                <h3>Manufacturing</h3>
+              </div>
+              <strong>Next</strong>
+            </li>
+            <li>
+              <div>
+                <h3>Assembly and validation</h3>
+              </div>
+              <strong>Not started</strong>
+            </li>
+          </ol>
+          <p>Status as of November 2026. No hardware has been built or tested yet.</p>
+        </div>
+        <div class="case-figures">
+          <figure class="figure">
+            <img src="../assets/images/mark-12/torsion-bar-sizing.webp" width="978" height="1026" loading="lazy"
+                 alt="Spreadsheet with front and rear columns: wall thickness, outer diameter, and bar length as inputs; weight, polar moment of inertia, and torsional stiffness as results; then the lever-arm length and resulting roll stiffness for the target, least-stiff, and most-stiff settings.">
+            <figcaption><strong>Fig. 7</strong> Lever-arm sizing sheet, front and rear. The bar dimensions at the top set the bar stiffness, and the sheet solves for the lever-arm lengths that bring the yellow roll-stiffness rows to their targets.</figcaption>
+          </figure>
+          <figure class="figure">
+            <img src="../assets/images/mark-12/rear-bearing-block-ansys.webp" width="1600" height="957" loading="lazy"
+                 alt="Ansys static structural result for a rear bearing block under a 905 lbf load, showing equivalent (von Mises) stress on the meshed part. Stress is highest around the top of the bore and low across the base.">
+            <figcaption><strong>Fig. 8</strong> Rear bearing block, 6061 aluminum under 905 lbf. Equivalent (von Mises) stress, Ansys.</figcaption>
+          </figure>
+        </div>
+      </section>
+
+    </div>
+
+    <div class="wrap">
+      <p class="page-end">
+        <a href="../index.html#projects"><span aria-hidden="true">&larr;</span> All projects</a>
+        <a href="shear-sensor.html">Shear sensor project <span class="arrow" aria-hidden="true">&rarr;</span></a>
+      </p>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <div>
+        <p class="footer-name">Aarav Shah</p>
+        <p>B.S. Mechanical Engineering, UCLA</p>
+      </div>
+      <nav aria-label="Footer">
+        <ul class="footer-links">
+          <li><a href="mark-12-arb.html">Mark 12 ARB</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../index.html#contact">Contact</a></li>
+          <li><a href="../assets/documents/aarav-shah-resume.pdf" download>Resume</a></li>
+          <li><a href="mailto:aaravnshah07@gmail.com">Email</a></li>
+          <li><a href="https://www.linkedin.com/in/aaravshah306/">LinkedIn</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>
