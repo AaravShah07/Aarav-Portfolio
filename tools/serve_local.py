@@ -1,7 +1,7 @@
-"""Serve the site locally at /portfolio/ to match the GitHub Pages project URL.
+"""Serve the site locally at /Aarav-Portfolio/ to match the GitHub Pages project URL.
 
 Usage: python tools/serve_local.py [port]
-Then open http://localhost:8000/portfolio/
+Then open http://localhost:8000/Aarav-Portfolio/
 """
 import http.server
 import pathlib
@@ -9,7 +9,7 @@ import sys
 import urllib.parse
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
-PREFIX = "/portfolio"
+PREFIX = "/Aarav-Portfolio"
 
 
 class Handler(http.server.SimpleHTTPRequestHandler):

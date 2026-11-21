@@ -1,6 +1,6 @@
 # Deploying to GitHub Pages
 
-The site publishes from the root of the `main` branch of a repository named `portfolio`. Its URL will be `https://<username>.github.io/portfolio/`.
+The site publishes from the root of the `main` branch of a repository named `Aarav-Portfolio`. It is live at <https://aaravshah07.github.io/Aarav-Portfolio/> (published November 20, 2026). The repository name is case-sensitive in the URL.
 
 ## Before the first push
 
@@ -40,7 +40,7 @@ In the `git status` output, make sure `CLAUDE.md`, `docs/`, and `source-media/` 
 
 ```text
 git commit -m "Initial portfolio site"
-git remote add origin https://github.com/<username>/portfolio.git
+git remote add origin https://github.com/AaravShah07/Aarav-Portfolio.git
 git push -u origin main
 ```
 
@@ -62,26 +62,26 @@ Use a signed-out or private browser window and check that:
 
 - Every page, image, font, and link works.
 - The site works on a phone.
-- A made-up URL, such as `/portfolio/does-not-exist`, shows the custom 404 page and its home link works.
+- A made-up URL, such as `/Aarav-Portfolio/does-not-exist`, shows the custom 404 page and its home link works.
 - All links open the correct contact details and resume.
 
 ## Add the final URL to page metadata
 
-These need the full live address, so they can't be finished in advance. In the `<head>` of each page, at the `CANONICAL` comment, add the page's own address:
+Done on November 20, 2026: every page has these tags in its `<head>`. A new page needs its own address in them:
 
 ```html
-<link rel="canonical" href="https://<username>.github.io/portfolio/">
-<meta property="og:url" content="https://<username>.github.io/portfolio/">
+<link rel="canonical" href="https://aaravshah07.github.io/Aarav-Portfolio/">
+<meta property="og:url" content="https://aaravshah07.github.io/Aarav-Portfolio/">
 ```
 
 Add an `og:image` tag on every page so shared links show a preview. Aarav chose his photo for this (November 17, 2026), using the JPG copy because some apps don't show WebP in previews:
 
 ```html
-<meta property="og:image" content="https://<username>.github.io/portfolio/assets/images/about/aarav-shah-preview.jpg">
+<meta property="og:image" content="https://aaravshah07.github.io/Aarav-Portfolio/assets/images/about/aarav-shah-preview.jpg">
 <meta property="og:image:width" content="400">
 <meta property="og:image:height" content="400">
 <meta property="og:image:alt" content="Aarav Shah">
-``` A `robots.txt` file isn't useful here, because crawlers only read it from the root of the domain, not from `/portfolio/`.
+``` A `robots.txt` file isn't useful here, because crawlers only read it from the root of the domain, not from `/Aarav-Portfolio/`.
 
 ## Updating the site
 
@@ -108,7 +108,7 @@ GitHub redeploys automatically. If the live site looks unchanged, wait a few min
 
 ## If the URL changes
 
-If you rename the repository or add a custom domain, update the `/portfolio/` home link in `404.html`. Other links are relative and will continue to work. For a custom domain, follow GitHub's custom domain instructions.
+If you rename the repository or add a custom domain, update the `/Aarav-Portfolio/` home link in `404.html`. Other links are relative and will continue to work. For a custom domain, follow GitHub's custom domain instructions.
 
 ## GitHub Pages limits
 

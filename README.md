@@ -10,7 +10,7 @@ You need Python 3. From the project folder, run:
 py tools/serve_local.py
 ```
 
-Then open <http://localhost:8000/portfolio/>. This server matches the GitHub Pages `/portfolio/` URL, and it serves `404.html` for missing paths.
+Then open <http://localhost:8000/Aarav-Portfolio/>. This server matches the GitHub Pages `/Aarav-Portfolio/` URL, and it serves `404.html` for missing paths.
 
 ## Project structure
 
